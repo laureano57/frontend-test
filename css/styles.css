@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 105px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.header-navbar ul, .main-navbar ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.header-navbar li, .main-navbar li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.header-navbar li a, .main-navbar li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #3A3335;
+}
+
+.header-navbar li i {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.header-navbar li:last-child a{
+    border-left: 1px solid #3A3335;
+    padding-left: 15px;
+}
+
+.header-logo {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.header-search-container {
+    display: inline-block;
+    vertical-align: top;
+    margin: 22px 40px 0px 25px;
+    height: 38px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.header-search-container input {
+    border: none;
+    padding: 10px 15px;
+    width: 500px;
+    height: 36px;
+}
+
+.header-search-container input::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}
+
+.header-search-container button {
+    float: right;
+    width: 36px;
+    height: 36px;
+    background-color: #FCAF17;
+    border: none;
+    cursor: pointer;
+}
+
+.header-search-container button i {
+    display: inline-block;
+}
+
+.header-offer {
+    float: right;
+    vertical-align: top;
+    margin-top: 22px;
+}
+
+.main-navbar-wrapper {
+    display: block;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #3A3335;
+    color: #FCAF17;
+}
+
+.main-navbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.categories ul {
+    padding: 0px;
+}
+
+.categories li {
+    padding: 0 23px;
+    border-right: 1px solid gray;
+}
+
+.checkout {
+    margin-left: auto;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.checkout-trolley {
+    text-decoration: none;
+    color: white;
+}
+
+.checkout-trolley i {
+    display: inline-flex;
+}
