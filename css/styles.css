@@ -340,30 +340,33 @@ header {
     height: 23px;
     padding: 3px 10px;
     margin: 7px 0;
-    background-color: #FCAF17;
-    color: black;
-    font-size: 15px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .filter-title i {
-    /* float: right; */
     justify-self: flex-end;
 }
 
 .filter-checkboxes li {
     margin: 7px 0;
+    font-size: 15px;
 }
 
+.filters-gender ul,
+.filters-sport ul,
+.filters-color ul{
+    display:none;
+}
 
-
-
-
-
-
-
+.filter-active-title {
+    background-color: #FCAF17;
+    color: black;
+}
 
 .footer-badges {
     display: flex;
