@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
   <head>
+    <title>FizzTest</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/icons.css">
   </head>
@@ -12,16 +13,16 @@
 
       <div class="header-navbar">
         <ul>
-          <li>
+          <li class="header-navbar-item">
             <i class="icon-pin"></i>
-            <a href="#">SUCURSALES</a>
+            <a href="#" class="uppercase">Sucursales</a>
           </li>
-          <li>
+          <li class="header-navbar-item">
             <i class="icon-tag"></i>
-            <a href="#">COMO COMPRAR</a>
+            <a href="#" class="uppercase">Como comprar</a>
           </li>
-          <li>
-            <a href="#">MIS PEDIDOS</a>
+          <li class="header-navbar-item">
+            <a href="#" class="uppercase">Mis pedidos</a>
           </li>
         </ul>
       </div>
@@ -33,7 +34,7 @@
       <div class="header-search-container">
         <form action="#" id="search-field">
           <input type="text" placeholder="Buscar por productos, deportes o marcas...">
-          <button type="submit" form="search-field"><i class="icon-search"></i></button>
+          <button type="submit"><i class="icon-search"></i></button>
         </form>
       </div>
 
@@ -47,14 +48,113 @@
       <div class="main-navbar">
         <nav class="categories">
           <ul>
-            <li>HOMBRE</li>
-            <li>MUJER</li>
-            <li>NIÑOS</li>
+            <li class="category">
+              <div class="dropdown">
+                <span class="category-title uppercase">Hombre</span>
+                <div class="dropdown-men">
+                  <i class="icon-down-arrow-white arrow"></i>
+                  <div class="drop-menu">
+                    <ul>
+                      <li>
+                        <div class="drop-menu-title uppercase">Calzado</div>
+                      </li>
+                      <li><a href="#">Botines</a></li>
+                      <li><a href="#">Zapatillas</a></li>
+                      <li><a href="#">Botines con tapones</a></li>
+                      <li><a href="#">Ojotas / Chinelas</a></li>
+                      <li><a href="#">Sandalias</a></li>
+                      <li>
+                        <div class="drop-menu-more">
+                          <a href="#">
+                            <span>Ver más</span>
+                            <i class="icon-right-arrow-round-gray"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="drop-offer">
+                    <img src="./images/077652619598013_1.jpg" alt="offer">
+                    <p class="offer-description uppercase">Medias Adidas Adiliner HC 3S</p>
+                    <p class="offer-price">$ 109,00</p>
+                    <i class="icon-adidas offer-brand"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="category">
+              <div class="dropdown">
+                <span class="category-title uppercase">Mujer</span>
+                <div class="dropdown-women">
+                  <i class="icon-down-arrow-white arrow"></i>
+                  <div class="drop-menu">
+                      <ul>
+                        <li>
+                          <div class="drop-menu-title uppercase">Calzado</div>
+                        </li>
+                        <li><a href="#">Botines</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Botines con tapones</a></li>
+                        <li><a href="#">Ojotas / Chinelas</a></li>
+                        <li><a href="#">Sandalias</a></li>
+                        <li>
+                          <div class="drop-menu-more">
+                            <a href="#">
+                              <span>Ver más</span>
+                              <i class="icon-right-arrow-round-gray"></i>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="drop-offer">
+                      <img src="./images/077652619598013_1.jpg" alt="offer">
+                      <p class="offer-description uppercase">Medias Adidas Adiliner HC 3S</p>
+                      <p class="offer-price">$ 109,00</p>
+                      <i class="icon-adidas offer-brand"></i>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li class="category">
+              <div class="dropdown">
+                <span class="category-title uppercase">Niños</span>
+                <div class="dropdown-children">
+                  <i class="icon-down-arrow-white arrow"></i>
+                  <div class="drop-menu">
+                      <ul>
+                        <li>
+                          <div class="drop-menu-title uppercase">Calzado</div>
+                        </li>
+                        <li><a href="#">Botines</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Botines con tapones</a></li>
+                        <li><a href="#">Ojotas / Chinelas</a></li>
+                        <li><a href="#">Sandalias</a></li>
+                        <li>
+                          <div class="drop-menu-more">
+                            <a href="#">
+                              <span>Ver más</span>
+                              <i class="icon-right-arrow-round-gray"></i>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="drop-offer">
+                      <img src="./images/077652619598013_1.jpg" alt="offer">
+                      <p class="offer-description uppercase">Medias Adidas Adiliner HC 3S</p>
+                      <p class="offer-price">$ 109,00</p>
+                      <i class="icon-adidas offer-brand"></i>
+                    </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="checkout">
           <a href="#" class="checkout-trolley">
-            Carrito
+            <span>Carrito</span>
             <i class="icon-shop-sm"></i>
           </a>
           <span class="checkout-items">0</span>
@@ -67,13 +167,13 @@
 
       <section class="banner">
         <div class="banner-container">
-          <img class="banner-slide" src="./images/racing-980x400.jpg">
-          <img class="banner-slide" src="./images/evoACCURACY_980x400px.jpg">
-          <img class="banner-slide" src="./images/racing-980x400.jpg">
+          <img class="banner-slide" src="./images/racing-980x400.jpg" alt="slide">
+          <img class="banner-slide" src="./images/evoACCURACY_980x400px.jpg" alt="slide">
+          <img class="banner-slide" src="./images/nike_980x400px.jpg" alt="slide">
           <div class="slider-dots">
-            <span class="dot" onclick="currentDiv(1)"></span>
-            <span class="dot" onclick="currentDiv(2)"></span>
-            <span class="dot" onclick="currentDiv(3)"></span>
+            <span class="dot" onclick="selectSlide(1)"></span>
+            <span class="dot" onclick="selectSlide(2)"></span>
+            <span class="dot" onclick="selectSlide(3)"></span>
           </div>
         </div>
         <div class="banner-footer">
@@ -82,7 +182,7 @@
       </section>
 
       <aside class="filters">
-        <p class="filters-title">FILTRO POR</p>
+        <p class="filters-title"></p>
         <div class="filters-gender"></div>
         <div class="filters-sport"></div>
         <div class="filters-color"></div>
@@ -94,8 +194,12 @@
 
     <footer>
       <div class="footer-badges">
+        <a href="https://www.vtex.com/">
         <i class="icon-vtex"></i>
-        <i class="icon-fizzmod"></i>
+      </a>
+        <a href="https://fizzmod.com/">
+          <i class="icon-fizzmod"></i>
+        </a>
       </div>
     </footer>
 
