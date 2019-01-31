@@ -25,8 +25,12 @@ $(document).ready(function() {
 		};
 	});
 
-	$(".product-image").hover(function() {
-		$(this).siblings(".product-price").toggleClass("product-price-hover");
-		$(this).siblings(".product-description").toggleClass("product-title-hover");
-	});
+	$(".product-image-wrapper")
+		.mouseenter(function() {
+			$(this).siblings(".product-description").css("font-size", 14);
+			$(this).siblings(".product-price").css("color", "green");
+		}).mouseleave(function() {
+			$(this).siblings(".product-description").css("font-size", 12);
+			$(this).siblings(".product-price").css("color", "#D44700");
+		});
 })

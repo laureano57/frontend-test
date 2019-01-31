@@ -446,14 +446,6 @@ header {
     margin: 8px;
 }
 
-.product-price-hover {
-    color: green !important;
-}
-
-.product-title-hover {
-    font-size: 15px !important;
-}
-
 .footer-badges {
     display: flex;
     align-items: center;
@@ -467,4 +459,28 @@ header {
 .footer-badges a i {
     margin: 0 20px;
     display: inline-block;
+}
+
+.shadow-effect {
+  position: relative;
+}
+
+.shadow-effect:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 4px;
+  width: 66%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
