@@ -136,3 +136,58 @@ header {
 .checkout-trolley i {
     display: inline-flex;
 }
+
+.banner-container {
+    margin-top: 28px;
+    position: relative;
+}
+
+.banner-slide {
+    display: block;
+    margin: 0 auto;
+}
+
+.banner-footer img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.slider-dots {
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0px 8px;
+    box-shadow: 0 0 7px gray;
+    color: black;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot-white {
+    background-color: white;
+}
+
+.footer-badges {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 13%;
+    background-color: #3A3335;
+    height: 58px;
+    width: 100%;
+}
+
+.footer-badges i {
+    margin: 0 20px;
+}
