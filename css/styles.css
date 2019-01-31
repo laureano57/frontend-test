@@ -282,10 +282,15 @@ header {
     margin: 0 auto;
 }
 
-.banner-footer img {
+.banner-footer-img {
     display: block;
     margin: 0 auto;
     padding-top: 20px;
+    cursor: pointer;
+}
+
+.banner-footer-response {
+    text-align: center;
 }
 
 .slider-dots {

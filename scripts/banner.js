@@ -33,3 +33,14 @@ function showDivs(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " dot-white";
 }
+
+$(document).ready(function() {
+  $(".banner").removeClass("hide");
+  $(".banner-footer-img").click(function(){
+    $.ajax({url: "http://remote.fizzmod.com/ajax.php",
+      success: function(result){
+        $(".banner-footer")
+          .html(`<p class="banner-footer-response">`+result+`</p>`);
+      }});
+  });
+})
