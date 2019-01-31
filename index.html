@@ -181,14 +181,81 @@
         </div>
       </section>
 
-      <aside class="filters">
-        <p class="filters-title"></p>
-        <div class="filters-gender"></div>
-        <div class="filters-sport"></div>
-        <div class="filters-color"></div>
+      <div class="products-wrapper">
+
+        <aside class="filters" id="aside">
+          <p class="filters-header uppercase">Filtro por</p>
+          <ul>
+
+            <li class="filters-gender">
+              <div class="filter-title">
+                <span>Sexo</span>
+                <i class="icon-down-arrow-round-white"></i>
+              </div>
+              <ul class="filter-checkboxes">
+                <li>
+                  <input type="checkbox">
+                  <span>Hombre</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Mujer</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Niños</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="filters-sport">
+              <div class="filter-title">
+                <span>Deporte</span>
+                <i class="icon-down-arrow-round-white"></i>
+              </div>
+              <ul class="filter-checkboxes">
+                <li>
+                  <input type="checkbox">
+                  <span>Futbol</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Basquet</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Hockey</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="filters-color">
+              <div class="filter-title">
+                <span>Color</span>
+                <i class="icon-down-arrow-round-white"></i>
+              </div>
+              <ul class="filter-checkboxes">
+                <li>
+                  <input type="checkbox">
+                  <span>Rojo</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Verde</span>
+                </li>
+                <li>
+                  <input type="checkbox">
+                  <span>Azul</span>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
       </aside>
 
       <section class="products"></section>
+
+    </div>
 
     </main>
 
@@ -206,5 +273,13 @@
   </body>
 
   <script src="./scripts/banner.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+
+  <script src="./scripts/aside.js"></script>
 
 </html>

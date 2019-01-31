@@ -305,6 +305,66 @@ header {
     background-color: white;
 }
 
+.products-wrapper {
+    display: block;
+    max-width: 980px;
+    margin: 50px auto;
+}
+
+.filters {
+    width: 165px;
+    margin: 0 40px auto 0;
+    display: inline-block;
+}
+
+.filters ul {
+    padding-left: 0px;
+}
+
+.filters-header {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.filters li {
+    list-style: none;
+}
+
+.filter-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 23px;
+    padding: 3px 10px;
+    margin: 7px 0;
+    background-color: #FCAF17;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.filter-title i {
+    /* float: right; */
+    justify-self: flex-end;
+}
+
+.filter-checkboxes li {
+    margin: 7px 0;
+}
+
+
+
+
+
+
+
+
+
 .footer-badges {
     display: flex;
     align-items: center;
