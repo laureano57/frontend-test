@@ -30,7 +30,7 @@ function showDivs(n) {
     dots[i].className = dots[i].className.replace(" dot-white", "");
   };
 
-  slides[slideIndex-1].style.display = "block";
+  $(slides[slideIndex-1]).hide().fadeIn(1000);
   dots[slideIndex-1].className += " dot-white";
 }
 
