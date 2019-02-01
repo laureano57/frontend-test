@@ -3,6 +3,7 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <title>FizzTest - Laureano Gonzalez</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/icons.css">
@@ -27,9 +28,13 @@
           </li>
         </ul>
       </div>
-
+      <div class="header-mobile">
+          <img class="menu-button" src="./images/hamburger-icon.png" alt="menu">
+          <img class="fizztest-logo" src="./images/logo.jpg" alt="logo">
+      </div>
       <div class="header-logo">
-        <img src="./images/logo.jpg" alt="logo">
+        <img class="menu-button remove" src="./images/hamburger-icon.png" alt="menu">
+        <img class="fizztest-logo" src="./images/logo.jpg" alt="logo">
       </div>
 
       <div class="header-search-container">
@@ -47,6 +52,7 @@
 
     <div class="main-navbar-wrapper">
       <div class="main-navbar">
+        <div class="mobile-navbar-close">x</div>
         <nav class="categories">
           <ul>
             <li class="category">
@@ -82,6 +88,27 @@
                   </div>
                 </div>
               </div>
+              <div class="mobile-dropdown-men">
+                <div class="category-title uppercase"><span>Hombre</span></div>
+                <ul class="mobile-drop-menu">
+                  <li>
+                    <div class="drop-menu-title uppercase">Calzado</div>
+                  </li>
+                  <li><a href="#">Botines</a></li>
+                  <li><a href="#">Zapatillas</a></li>
+                  <li><a href="#">Botines con tapones</a></li>
+                  <li><a href="#">Ojotas / Chinelas</a></li>
+                  <li><a href="#">Sandalias</a></li>
+                  <li>
+                    <div class="drop-menu-more">
+                      <a href="#">
+                        <span>Ver más</span>
+                        <i class="icon-right-arrow-round-gray"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="category">
               <div class="dropdown">
@@ -116,6 +143,27 @@
                     </div>
                 </div>
               </div>
+              <div class="mobile-dropdown-women">
+                  <div class="category-title uppercase"><span>Mujer</span></div>
+                  <ul class="mobile-drop-menu">
+                    <li>
+                      <div class="drop-menu-title uppercase">Calzado</div>
+                    </li>
+                    <li><a href="#">Botines</a></li>
+                    <li><a href="#">Zapatillas</a></li>
+                    <li><a href="#">Botines con tapones</a></li>
+                    <li><a href="#">Ojotas / Chinelas</a></li>
+                    <li><a href="#">Sandalias</a></li>
+                    <li>
+                      <div class="drop-menu-more">
+                        <a href="#">
+                          <span>Ver más</span>
+                          <i class="icon-right-arrow-round-gray"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
             </li>
             <li class="category">
               <div class="dropdown">
@@ -150,6 +198,27 @@
                     </div>
                 </div>
               </div>
+              <div class="mobile-dropdown-children">
+                  <div class="category-title uppercase"><span>Niños</span></div>
+                  <ul class="mobile-drop-menu">
+                    <li>
+                      <div class="drop-menu-title uppercase">Calzado</div>
+                    </li>
+                    <li><a href="#">Botines</a></li>
+                    <li><a href="#">Zapatillas</a></li>
+                    <li><a href="#">Botines con tapones</a></li>
+                    <li><a href="#">Ojotas / Chinelas</a></li>
+                    <li><a href="#">Sandalias</a></li>
+                    <li>
+                      <div class="drop-menu-more">
+                        <a href="#">
+                          <span>Ver más</span>
+                          <i class="icon-right-arrow-round-gray"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
             </li>
           </ul>
         </nav>
@@ -182,7 +251,7 @@
         </div>
       </section>
 
-      <div class="products-wrapper">
+      <div class="products-main">
 
         <aside class="filters" id="aside">
           <p class="filters-header uppercase">Filtro por</p>
@@ -254,18 +323,22 @@
           </ul>
         </aside>
 
-        <section class="products">
-          <div class="product-container sample hide">
-            <div class="product-image-wrapper shadow-effect">
-              <img class="product-image" src="" alt="product-image">
+        <div class="products-wrapper">
+
+          <section class="products">
+            <div class="product-container remove hide">
+              <div class="product-image-wrapper shadow-effect">
+                <img class="product-image" src="" alt="product-image">
+              </div>
+              <div class="product-discount hide">Oferta</div>
+              <p class="product-description uppercase"></p>
+              <p class="product-price"></p>
+              <i class="product-brand"></i>
+              <p class="product-category"></p>
             </div>
-            <div class="product-discount hide">Oferta</div>
-            <p class="product-description uppercase"></p>
-            <p class="product-price"></p>
-            <i class="product-brand"></i>
-            <p class="product-category"></p>
-          </div>
-        </section>
+          </section>
+
+        </div>
 
       </div>
 
@@ -294,5 +367,6 @@
   <script src="./scripts/banner.js"></script>
   <script src="./scripts/aside.js"></script>
   <script src="./scripts/products.js"></script>
+  <script src="./scripts/mobile-menu.js"></script>
 
 </html>

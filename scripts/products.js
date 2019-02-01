@@ -11,7 +11,7 @@ var products = [
 
 $(document).ready(function() {
 	products.forEach(product => {
-		var newProduct = $(".product-container.sample").clone().removeClass("sample hide").appendTo(".products");
+		var newProduct = $(".product-container.remove").clone().removeClass("remove hide").appendTo(".products");
 		$(newProduct).find(".product-image").attr("src", product.image);
 		$(newProduct).find(".product-description").text(product.title);
 		$(newProduct).find(".product-price").text("$ "+product.price);
