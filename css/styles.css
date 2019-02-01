@@ -442,6 +442,7 @@ main {
 
 .product-description {
   display: block;
+  overflow: hidden;
   height: 30px;
   font-size: 12px;
   font-weight: 700;
