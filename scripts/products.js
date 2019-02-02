@@ -27,10 +27,10 @@ $(document).ready(function() {
 
 	$(".product-image-wrapper")
 		.mouseenter(function() {
-			$(this).siblings(".product-description").css("font-size", 14);
+			$(this).siblings(".product-description").addClass("product-description-zoom");
 			$(this).siblings(".product-price").css("color", "green");
 		}).mouseleave(function() {
-			$(this).siblings(".product-description").css("font-size", 12);
+			$(this).siblings(".product-description").removeClass("product-description-zoom");
 			$(this).siblings(".product-price").css("color", "#D44700");
 		});
 })

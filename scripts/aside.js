@@ -1,6 +1,5 @@
 $("#aside > ul > li > .filter-title").click(function() {
     var checkElement = $(this).next();
-    // $("#aside li").removeClass("active");
     $(this).closest("li").addClass("active");
     $(this).addClass("filter-active-title");
 

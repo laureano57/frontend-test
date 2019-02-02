@@ -385,7 +385,9 @@ main {
 }
 
 .filter-checkboxes {
+  overflow: hidden;
   padding-left: 0px;
+  margin-bottom: 10px;
 }
 
 .filter-checkboxes li {
@@ -442,11 +444,18 @@ main {
 
 .product-description {
   display: block;
-  overflow: hidden;
+  text-align: center;
   height: 30px;
   font-size: 12px;
   font-weight: 700;
   margin: 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.product-description-zoom {
+  -webkit-transform: scale(calc(14/12));
+  transform: scale(calc(14/12));
 }
 
 .product-price {
@@ -454,6 +463,7 @@ main {
   margin: 0px;
   color: #D84700;
   font-weight: 700;
+  text-shadow: 1px 1px 1px lightgray;
 }
 
 .product-brand {
