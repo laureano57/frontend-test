@@ -1,2 +1,2 @@
-# fizzmod-test
-Examen de aptitudes - Laureano Gonzalez
+# frontend-test
+Examen de aptitudes para front-end developer
